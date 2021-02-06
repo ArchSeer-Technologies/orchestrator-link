@@ -5,7 +5,14 @@ body {
   color: rgba(0,0,0, 0.22);
 }
 
+.container{
+  margin: 5% 15% 0% 15%;
+}
 
+h1{
+  color: #2196f3;
+  text-align:center;
+}
 
 .input-group {
   position: relative;
@@ -13,18 +20,16 @@ body {
 }
 
 .form-control {
-  position: relative;
+  position:relative;
   z-index: 1;
-  width: 13%;
+  width: 100%;
   height: 35px;
   font-size: 16px;
-  border: none;
   border: 1px solid rgba(0,0,0,0.1);
   background-color: transparent;
   border-radius: 5px;
   border-width: 2px;
   padding-left:10px;
-  padding-right:35px;
 }
 
 .form-control+ label {
@@ -58,16 +63,14 @@ body {
   }
 
 i{
-    color: rgba(0,0,0,0.6);
+  display:inline-block;
+  position:absolute;
+  top: 14px;
+  right: 5px;
+  z-index:1;
+  color: rgba(0,0,0,0.6);
 }
 
 i:hover{
     cursor: pointer;
-}
-
-label ~ i{
-    position: absolute;
-    top: 14px;
-    left: 270px;
-    z-index:1;
 }
