@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: rgba(0,0,0, 0.22);
+}
+
+
+
+.input-group {
+  position: relative;
+  margin: 20px auto;
+}
+
+.form-control {
+  position: relative;
+  z-index: 1;
+  width: 13%;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 2px;
+  padding-left:10px;
+  padding-right:35px;
+}
+
+.form-control+ label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    transition: all 0.1s ease-out;
+  }
+
+.form-control:focus {
+    outline: none;
+    border-color: #2196f3;
+    transition: all 0.1s ease-out;
+    caret-color: #2196f3;
+  }
+
+.form-control:focus + label,
+.form-control.has-value + label {
+    top: -7.5px;
+    color: #2196f3;
+    font-size: 14px;
+    background-color: white;
+    z-index: 1;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+.form-controlhas-value:not(:focus) + label {
+    color: rgba(0,0,0,0.6);
+  }
+
+i{
+    color: rgba(0,0,0,0.6);
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+label ~ i{
+    position: absolute;
+    top: 14px;
+    left: 270px;
+    z-index:1;
+}
