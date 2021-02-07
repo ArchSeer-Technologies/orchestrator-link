@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bddd2eaffb.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
@@ -14,28 +14,28 @@
     <div class="container">
         <h1>Orchestrtor-link</h1>
         <div class="input-group">
-            <input type="password" class="form-control"/>
+            <input type="password" class="form-control" required/>
             <label>User Key</label>
             <i class="fas fa-eye"></i>
         </div>
           
         <div class="input-group">
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" required/>
             <label>Logical Name</label>
         </div>
           
         <div class="input-group">
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" required/>
             <label>Tenant</label>
         </div>
         
         <div class="input-group">
-            <input type="password" class="form-control" />
+            <input type="password" class="form-control" required/>
             <label>Client Id</label>
             <i class="fas fa-eye"></i>
         </div>
+        <button id="submit-button">Submit</button>
     </div>
-    
-
+    <script src="index.js"></script>
 </body>
 </html>
