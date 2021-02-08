@@ -54,8 +54,6 @@ for (const button of buttons) {
 }
 
 $("#submit-button").on("click",function(){
-  console.log($("#userKey").attr("value"))
-  console.log($("#logicalName").attr("value"))
-  console.log($("#tenant").attr("value"))
-  console.log($("#clientId").attr("value"))
+  const token = $("#userKey").val() + "~" + $("#logicalName").val() + "~" + $("#tenant").val()  + "~" + $("#clientId").val()
+  window.location.replace("https://layla.amazon.com/api/skill/link/MKTB4UVLWHIZ4/#token="+token+"&token_type=Bearer&expiration_time=3600&state=authorizationRequestState&source=app")
 });
