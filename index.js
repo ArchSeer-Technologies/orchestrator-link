@@ -52,3 +52,10 @@ console.log(buttons.length)
 for (const button of buttons) {
   button.addEventListener("click", createRipple);
 }
+
+$("#submit-button").on("click",function(){
+  console.log($("#userKey").attr("value"))
+  console.log($("#logicalName").attr("value"))
+  console.log($("#tenant").attr("value"))
+  console.log($("#clientId").attr("value"))
+});
