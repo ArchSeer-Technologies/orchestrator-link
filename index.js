@@ -57,3 +57,5 @@ $("#submit-button").on("click",function(){
   const token = $("#userKey").val() + "~" + $("#logicalName").val() + "~" + $("#tenant").val()  + "~" + $("#clientId").val()
   window.location.replace("https://layla.amazon.com/api/skill/link/MKTB4UVLWHIZ4/#token="+token+"&token_type=Bearer")
 });
+
+alert(window.location.href)
