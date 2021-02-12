@@ -54,8 +54,9 @@ for (const button of buttons) {
 }
 
 $("#submit-button").on("click",function(){
-  const token = $("#userKey").val() + "~" + $("#logicalName").val() + "~" + $("#tenant").val()  + "~" + $("#clientId").val()
-  window.location.replace("https://layla.amazon.com/api/skill/link/MKTB4UVLWHIZ4/#token="+token+"&token_type=Bearer")
+  const code = $("#userKey").val() + "~" + $("#logicalName").val() + "~" + $("#tenant").val()  + "~" + $("#clientId").val()
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const state = urlParams.get("state")
+  window.location.replace("https://pitangui.amazon.com/api/skill/link/MKTB4UVLWHIZ4/?state="+state+"&code="+code)
 });
-
-alert(window.location.href)
