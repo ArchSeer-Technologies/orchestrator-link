@@ -58,5 +58,5 @@ $("#submit-button").on("click",function(){
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const state = urlParams.get("state")
-  window.location.replace("https://pitangui.amazon.com/api/skill/link/MKTB4UVLWHIZ4/?state="+state+"&code="+code)
+  window.location.replace("https://pitangui.amazon.com/api/skill/link/MKTB4UVLWHIZ4?state="+state+"&code="+code)
 });
